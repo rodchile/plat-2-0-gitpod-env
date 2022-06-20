@@ -1,0 +1,4 @@
+image:
+  file: .gitpod.Dockerfile
+tasks:
+  - before: d="$HOME/.slack"; md="/workspace/${d##*/}"; mkdir -p "$md" && rm -rf "$d" && ln -sf "$md" "$d" && exit
